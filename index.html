@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <div class="controls">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+                <button id="logoutBtn" class="btn">Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="add-task-container">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addTaskBtn" class="btn primary-btn">Add</button>
+            </div>
+
+            <ul id="taskList" class="task-list">
+                <!-- Tasks will be injected here via JavaScript -->
+            </ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
